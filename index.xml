@@ -6,6 +6,18 @@
       <description>Last 10 notes on Halo2world</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>熊思录</title>
+    <link>https://haloworld-c.github.io/</link>
+    <guid>https://haloworld-c.github.io/</guid>
+    <description><![CDATA[ 推荐文章 Quote “在混乱的物理世界中寻找数学的优雅与系统的确定性。” 你好，我是 熊也(Hal)。一名致力于打通 AI(黑盒) 与决策规划控制(白盒)的机器人工程师。本博客的深层目标: 为我接触到的知识提供/构建一个统一的架构， 并试图提供一个统一视角, 以提升理解与认知 记录工程落地到算法理论的进阶之路。 知识导航 01_Useful_Tools: 主要是计算机相关的一些有用的效率工具及构建工具的使用经验分享 02_Mathematics and Physics: 微分方程 / 矩阵论 / 概率论 / 算法 /凸优化 / 李群 / 不确定性 / 刚体运动 02_Robot_System... ]]></description>
+    <pubDate>Sun, 12 Apr 2026 03:50:34 GMT</pubDate>
+  </item><item>
+    <title>从不同的角度理解凸优化中的cost</title>
+    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/insights/%E4%BB%8E%E4%B8%8D%E5%90%8C%E7%9A%84%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%87%B8%E4%BC%98%E5%8C%96%E4%B8%AD%E7%9A%84cost</link>
+    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/insights/%E4%BB%8E%E4%B8%8D%E5%90%8C%E7%9A%84%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%87%B8%E4%BC%98%E5%8C%96%E4%B8%AD%E7%9A%84cost</guid>
+    <description><![CDATA[ Introduction 在阅读 Apollo 中的 FemPosDeviationSmoother 实现时，一个非常关键但又容易陷入细节的问题是： QP 中的 Hessian 矩阵 P 是如何构建的？为什么呈现出带状结构？这些 6、-4、1 的系数本质从哪里来？ 而且对于优化问题来说似乎共享同一种带状结构, 这也是稀疏性的来源 如果停留在代码层面，我们只能看到： 稀疏矩阵按列填充 不同位置系数不同（6X、5X、X…） 依赖相邻点的耦合关系 本文尝试从更高层抽象出这个问题的本质, 在本文的最后我们将会看到， 这其实是很多优化问题共有的结构特征， 而文中的讨论便以我们问题引入的FemPosDev... ]]></description>
+    <pubDate>Sun, 12 Apr 2026 03:50:34 GMT</pubDate>
+  </item><item>
     <title>MPC控制算法原理与推导</title>
     <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/MPC%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%8E%A8%E5%AF%BC</link>
     <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/MPC%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%8E%A8%E5%AF%BC</guid>
@@ -53,18 +65,6 @@
     <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/%E6%A8%AA%E5%90%91%E6%8E%A7%E5%88%B6(%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA)</guid>
     <description><![CDATA[ 通用经验 指令前馈 根据曲率限速 路径的质量要过关 pure pursuit controller 关键在于选择一个合适的look_ahead_point 通过速度进行调节 L_t=k*v_t 形式二 L_t=v_t*l_t l_t含义需要进一步调研[ref](Ohta H, Akai N, Takeuchi E, Kato S, Edahiro M. ]]></description>
     <pubDate>Mon, 06 Apr 2026 01:26:06 GMT</pubDate>
-  </item><item>
-    <title>AI coding practice</title>
-    <link>https://haloworld-c.github.io/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/AI-coding-practice</link>
-    <guid>https://haloworld-c.github.io/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/AI-coding-practice</guid>
-    <description><![CDATA[ Introduction 经过两个月的在开发流程中引入了AI coding， 越来越觉得AI coding 是未来的开发新的范式, 极有可能改变开发的流程与构建的方式。因为除了程序几乎可以构建任何数字系统， 结合AI coding后还引入了自递归的结构(AI 可以生成代码， 也可以对已有代码进行改进)， 开发的难度会急剧降低。软件工程中所谓的“银弹”似乎借由AI coding到来了。 概念 在AI coding的时代，很多传统将被颠覆 , AI大模型的发展日新月异， 普通人的机会在与利用AI进行应用层的创新。目前对于AI 及AI coding的概念认知如下: AI编程依赖于大模型的水平， 目前... ]]></description>
-    <pubDate>Mon, 06 Apr 2026 01:26:06 GMT</pubDate>
-  </item><item>
-    <title>01_Useful_Tools</title>
-    <link>https://haloworld-c.github.io/content/01_Useful_Tools</link>
-    <guid>https://haloworld-c.github.io/content/01_Useful_Tools</guid>
-    <description><![CDATA[ Overview 在学习和工作过程中使用的一些比较好用的工具， 在这里进行汇总。 Content Linux 主流的开发环境， 有着众多的衍生版本(但都遵循unix的设计原则)。这里列出来的一些工具大多都不局限在linux系统， 但是作者主要在Linux下介绍其使用。 Linux Ubuntu安装总结 ROS ROS是机器系统库， 常用于机器人及自动驾驶领域。其核心是提供了一个机器人构建系统， 包含了节点管理， 编译， 及节点通讯的模型。目前主流使用的ROS2， 其主要改进为节点管理去中心化， 增强实时性能力。 ROS, ROS基础 ROS2 地图相关 lanelet2, 自动驾驶中使用的一种... ]]></description>
-    <pubDate>Sat, 04 Apr 2026 06:09:20 GMT</pubDate>
   </item>
     </channel>
   </rss>
