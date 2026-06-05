@@ -6,16 +6,40 @@
       <description>Last 10 notes on Halo2world</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>熊思录</title>
-    <link>https://haloworld-c.github.io/</link>
-    <guid>https://haloworld-c.github.io/</guid>
-    <description><![CDATA[ 推荐文章 Quote “在混乱的物理世界中寻找数学的优雅与系统的确定性。” 你好，我是 熊也(Hal)。一名致力于打通 AI(黑盒) 与决策规划控制(白盒)的机器人工程师。本博客的深层目标: 为我接触到的知识提供/构建一个统一的架构， 并试图提供一个统一视角, 以提升理解与认知 记录工程落地到算法理论的进阶之路。 知识导航 01_Useful_Tools: 主要是计算机相关的一些有用的效率工具及构建工具的使用经验分享 02_Mathematics and Physics: 微分方程 / 矩阵论 / 概率论 / 算法 /凸优化 / 李群 / 不确定性 / 刚体运动 02_Robot_System... ]]></description>
-    <pubDate>Sun, 12 Apr 2026 03:50:34 GMT</pubDate>
+    <title>一种基于局部安全走廊的软硬约束混合优化避障方法</title>
+    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/%E9%81%BF%E9%9A%9C/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E%E5%B1%80%E9%83%A8%E5%AE%89%E5%85%A8%E8%B5%B0%E5%BB%8A%E7%9A%84%E8%BD%AF%E7%A1%AC%E7%BA%A6%E6%9D%9F%E6%B7%B7%E5%90%88%E4%BC%98%E5%8C%96%E9%81%BF%E9%9A%9C%E6%96%B9%E6%B3%95</link>
+    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/%E9%81%BF%E9%9A%9C/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E%E5%B1%80%E9%83%A8%E5%AE%89%E5%85%A8%E8%B5%B0%E5%BB%8A%E7%9A%84%E8%BD%AF%E7%A1%AC%E7%BA%A6%E6%9D%9F%E6%B7%B7%E5%90%88%E4%BC%98%E5%8C%96%E9%81%BF%E9%9A%9C%E6%96%B9%E6%B3%95</guid>
+    <description><![CDATA[ Introduction 在看Apollo自动驾驶的代码中的FemPosDeviationSmoother组件时, 发现其构造的障碍物约束很有意思， 是一种混合了软硬约束障碍物势场方法， 其构造非常精妙: 传统优化避障方法通常有两种思路： 直接构造障碍物距离代价项（Distance Cost） 构造硬约束（Hard Constraint） 前者容易出现贴障问题，后者则容易导致可行域过小、数值不稳定。 而 Apollo 的实现采用了一种非常巧妙的混合方案： 使用局部 Polygon（point_box）构造安全区域 使用凸优化中的线性项 q 构造势场斥力 使用 Box Constraint 保证... ]]></description>
+    <pubDate>Fri, 05 Jun 2026 23:02:41 GMT</pubDate>
+  </item><item>
+    <title>ROS2</title>
+    <link>https://haloworld-c.github.io/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/third_parties/ROS/ROS2</link>
+    <guid>https://haloworld-c.github.io/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/third_parties/ROS/ROS2</guid>
+    <description><![CDATA[ Core concept 相比于ROS1的改进： 增加对实时系统的支持，采用DDS作为通信中间件 去中心化Master 常用命令(与ROS1相同的命令见ROS) commandparamsdecriptioncommentcolcon build—packages-select [package]编译指定包colcon build为ROS2的编译命令行工具, 编译附加依赖colcon build —packages 添加Cmake参数： —cmake-args -DBUILD_TESTING=ON限制多线程数:colcon build —parallel-workers 2单线程编译: col... ]]></description>
+    <pubDate>Wed, 03 Jun 2026 06:06:53 GMT</pubDate>
+  </item><item>
+    <title>AI coding practice</title>
+    <link>https://haloworld-c.github.io/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/AI-coding-practice</link>
+    <guid>https://haloworld-c.github.io/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/AI-coding-practice</guid>
+    <description><![CDATA[ Introduction 经过两个月的在开发流程中引入了AI coding， 越来越觉得AI coding 是未来的开发新的范式, 极有可能改变开发的流程与构建的方式。因为除了程序几乎可以构建任何数字系统， 结合AI coding后还引入了自递归的结构(AI 可以生成代码， 也可以对已有代码进行改进)， 开发的难度会急剧降低。软件工程中所谓的“银弹”似乎借由AI coding到来了。 概念 在AI coding的时代，很多传统将被颠覆 , AI大模型的发展日新月异， 普通人的机会在与利用AI进行应用层的创新。目前对于AI 及AI coding的概念认知如下: AI编程依赖于大模型的水平， 目前... ]]></description>
+    <pubDate>Mon, 27 Apr 2026 02:57:42 GMT</pubDate>
   </item><item>
     <title>从不同的角度理解凸优化中的cost</title>
     <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/insights/%E4%BB%8E%E4%B8%8D%E5%90%8C%E7%9A%84%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%87%B8%E4%BC%98%E5%8C%96%E4%B8%AD%E7%9A%84cost</link>
     <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/insights/%E4%BB%8E%E4%B8%8D%E5%90%8C%E7%9A%84%E8%A7%92%E5%BA%A6%E7%90%86%E8%A7%A3%E5%87%B8%E4%BC%98%E5%8C%96%E4%B8%AD%E7%9A%84cost</guid>
     <description><![CDATA[ Introduction 在阅读 Apollo 中的 FemPosDeviationSmoother 实现时，一个非常关键但又容易陷入细节的问题是： QP 中的 Hessian 矩阵 P 是如何构建的？为什么呈现出带状结构？这些 6、-4、1 的系数本质从哪里来？ 而且对于优化问题来说似乎共享同一种带状结构, 这也是稀疏性的来源 如果停留在代码层面，我们只能看到： 稀疏矩阵按列填充 不同位置系数不同（6X、5X、X…） 依赖相邻点的耦合关系 本文尝试从更高层抽象出这个问题的本质, 在本文的最后我们将会看到， 这其实是很多优化问题共有的结构特征， 而文中的讨论便以我们问题引入的FemPosDev... ]]></description>
+    <pubDate>Sun, 26 Apr 2026 06:50:01 GMT</pubDate>
+  </item><item>
+    <title>FemPosDeviationSmoother</title>
+    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/smoother/FemPosDeviationSmoother</link>
+    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/smoother/FemPosDeviationSmoother</guid>
+    <description><![CDATA[ [原始论文](Optimal Vehicle Path Planning Using Quadratic Optimization for Baidu Apollo Open Platform)， 该论文只用一段话描述了核心思想， 其实现细节需要从官方代码仓库中理解。 代码参考1 代码参考2 Core Concept Fem含义为Finite Element Method，有限元方法 平滑项采用了有限元风格的离散弯曲能量， 把路径看成一个离散的”弹性线”， 然后最小化它的弯曲变形。、 是在笛卡尔空间中进行平滑优化, 可以施加最大曲率优化(由于其几何性质， 无法施加初始曲率限制), 也可以添加每... ]]></description>
+    <pubDate>Thu, 16 Apr 2026 02:26:48 GMT</pubDate>
+  </item><item>
+    <title>熊思录</title>
+    <link>https://haloworld-c.github.io/</link>
+    <guid>https://haloworld-c.github.io/</guid>
+    <description><![CDATA[ 推荐文章 Quote “在混乱的物理世界中寻找数学的优雅与系统的确定性。” 你好，我是 熊也(Hal)。一名致力于打通 AI(黑盒) 与决策规划控制(白盒)的机器人工程师。本博客的深层目标: 为我接触到的知识提供/构建一个统一的架构， 并试图提供一个统一视角, 以提升理解与认知 记录工程落地到算法理论的进阶之路。 知识导航 01_Useful_Tools: 主要是计算机相关的一些有用的效率工具及构建工具的使用经验分享 02_Mathematics and Physics: 微分方程 / 矩阵论 / 概率论 / 算法 /凸优化 / 李群 / 不确定性 / 刚体运动 02_Robot_System... ]]></description>
     <pubDate>Sun, 12 Apr 2026 03:50:34 GMT</pubDate>
   </item><item>
     <title>MPC控制算法原理与推导</title>
@@ -23,12 +47,6 @@
     <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/MPC%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%E4%B8%8E%E6%8E%A8%E5%AF%BC</guid>
     <description><![CDATA[ Introduction MPC控制算法是工业控制、自动驾驶、及机器人、航空航天等多个领域都有广泛应用的算法， 相比于PID算法， 其功能更加强大且能够处理多输入多输出系统(PID如果有多个输出则需要多路PID通道)。MPC全称叫做Model Predict Control(模型预测控制)。顾名思义， 这是一种利用模型来预测未来一段时间内的状态， 然后综合未来状态作为反馈计算当前时刻的控制输出。 当前研究趋势 Core Concept MPC这个名称并没有反应它的一个特点， 那就是MPC是一种最优控制方法。 所谓最优控制就是对一个控制系统设计一个代价函数(即对系统表现的期望， 例如能量损耗最小... ]]></description>
     <pubDate>Sat, 11 Apr 2026 10:07:20 GMT</pubDate>
-  </item><item>
-    <title>FemPosDeviationSmoother</title>
-    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/smoother/FemPosDeviationSmoother</link>
-    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/smoother/FemPosDeviationSmoother</guid>
-    <description><![CDATA[ [原始论文](Optimal Vehicle Path Planning Using Quadratic Optimization for Baidu Apollo Open Platform)， 该论文只用一段话描述了核心思想， 其实现细节需要从官方代码仓库中理解。 代码参考1 代码参考2 Core Concept Fem含义为Finite Element Method，有限元方法 平滑项采用了有限元风格的离散弯曲能量， 把路径看成一个离散的”弹性线”， 然后最小化它的弯曲变形。、 是在笛卡尔空间中进行平滑优化, 可以施加最大曲率优化(由于其几何性质， 无法施加初始曲率限制), 也可以添加每... ]]></description>
-    <pubDate>Sat, 11 Apr 2026 04:06:55 GMT</pubDate>
   </item><item>
     <title>两轮差速驱动运动模型</title>
     <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/%E8%BF%90%E5%8A%A8-%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B/%E4%B8%A4%E8%BD%AE%E5%B7%AE%E9%80%9F%E9%A9%B1%E5%8A%A8%E8%BF%90%E5%8A%A8%E6%A8%A1%E5%9E%8B</link>
@@ -47,24 +65,6 @@
     <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/%E8%BF%90%E5%8A%A8-%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B/%E5%A4%9A%E8%BD%A6%E8%BE%86%E8%BF%90%E5%8A%A8%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC</guid>
     <description><![CDATA[ 问题定义 这里定义的“多车俩个运动学”，并非是多个彼此物理上分离的车辆的运动学（事实上如果多车是物理上彼此分离的，那么也没有定义一个联合运动公式的必要了）。而是一个车头或多个车头带多个托挂组成的类似连杆机构的系统（与火车类似，但是我们的车辆是定义的二维空间中，而非一维空间中）。其形式如图一所示。 问题分解 单车运动学 首先来定义单车运动学，我们假定我们研究的车头像一辆汽车一样，拥有前后两组对轮，可以简化为自行车模型如图1。 图中车辆被简化为自行车模型，前后两轮由连杆进行连接。假定轮胎不存在打滑也没有侧滑的情形。图中以右手坐标系为例（因为自动驾驶算法所依赖的ROS通常采用右手坐标系）。OXY为当... ]]></description>
     <pubDate>Mon, 06 Apr 2026 01:57:51 GMT</pubDate>
-  </item><item>
-    <title>03_PNC_Systems</title>
-    <link>https://haloworld-c.github.io/content/03_PNC_Systems</link>
-    <guid>https://haloworld-c.github.io/content/03_PNC_Systems</guid>
-    <description><![CDATA[ overview 本专题主要集中讨论机器人系统中的决策、规划控制领域(甚至包括定位， 因为我们可以用统一的观测器模型来将定位也纳入到本体控制系统)。目前主要内容有控制器， 后序将逐渐扩展， 也将在这里尝试将PNC系统用统一的框架来描述。 规划方法 平滑方法 FemPosDeviationSmoother 局部规划方法 Piecewise jerk Planner 控制方法 横向控制(路径跟踪) LQR控制器 iLQR算法 MPC控制思想 MPC控制算法原理与推导 . ]]></description>
-    <pubDate>Mon, 06 Apr 2026 01:26:06 GMT</pubDate>
-  </item><item>
-    <title>LQR控制器</title>
-    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/LQR%E6%8E%A7%E5%88%B6%E5%99%A8</link>
-    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/LQR%E6%8E%A7%E5%88%B6%E5%99%A8</guid>
-    <description><![CDATA[ Core concept LQR全称为linear quadratic regulater, 即线性二次型调节器。 LQR属于最优控制的一种， 最优控制一般要求我们知道系统的模型， 并有一个Cost优化目标。 从LQR的名字我们可以看出: 需要系统模型为线性系统， 或者至少可以本地线性化; 对于系统的状态稳定在零点 其代价函数J为二次型的形式 LQR控制器推导 系统状态转移方程 \begin{matrix} x_{k+1}=f(x_{k},u_{k})&amp;==A{\times}x_k+B{\times}u_k \\ \end{matrix} \tag{1.1} 上面状态转移矩阵为离散形式... ]]></description>
-    <pubDate>Mon, 06 Apr 2026 01:26:06 GMT</pubDate>
-  </item><item>
-    <title>横向控制(路径跟踪)</title>
-    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/%E6%A8%AA%E5%90%91%E6%8E%A7%E5%88%B6(%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA)</link>
-    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/%E6%A8%AA%E5%90%91%E6%8E%A7%E5%88%B6(%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA)</guid>
-    <description><![CDATA[ 通用经验 指令前馈 根据曲率限速 路径的质量要过关 pure pursuit controller 关键在于选择一个合适的look_ahead_point 通过速度进行调节 L_t=k*v_t 形式二 L_t=v_t*l_t l_t含义需要进一步调研[ref](Ohta H, Akai N, Takeuchi E, Kato S, Edahiro M. ]]></description>
-    <pubDate>Mon, 06 Apr 2026 01:26:06 GMT</pubDate>
   </item>
     </channel>
   </rss>
