@@ -6,6 +6,12 @@
       <description>Last 10 notes on Halo2world</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>03_PNC_Systems</title>
+    <link>https://haloworld-c.github.io/content/03_PNC_Systems</link>
+    <guid>https://haloworld-c.github.io/content/03_PNC_Systems</guid>
+    <description><![CDATA[ overview 本专题主要集中讨论机器人系统中的决策、规划控制领域(甚至包括定位， 因为我们可以用统一的观测器模型来将定位也纳入到本体控制系统)。目前主要内容有控制器， 后序将逐渐扩展， 也将在这里尝试将PNC系统用统一的框架来描述。 规划方法 平滑方法 FemPosDeviationSmoother 局部规划方法 Piecewise jerk Planner 一种基于局部安全走廊的软硬约束混合优化避障方法 控制方法 横向控制(路径跟踪) LQR控制器 iLQR算法 MPC控制思想 MPC控制算法原理与推导 . ]]></description>
+    <pubDate>Fri, 05 Jun 2026 23:04:06 GMT</pubDate>
+  </item><item>
     <title>一种基于局部安全走廊的软硬约束混合优化避障方法</title>
     <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/%E9%81%BF%E9%9A%9C/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E%E5%B1%80%E9%83%A8%E5%AE%89%E5%85%A8%E8%B5%B0%E5%BB%8A%E7%9A%84%E8%BD%AF%E7%A1%AC%E7%BA%A6%E6%9D%9F%E6%B7%B7%E5%90%88%E4%BC%98%E5%8C%96%E9%81%BF%E9%9A%9C%E6%96%B9%E6%B3%95</link>
     <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/%E9%81%BF%E9%9A%9C/%E4%B8%80%E7%A7%8D%E5%9F%BA%E4%BA%8E%E5%B1%80%E9%83%A8%E5%AE%89%E5%85%A8%E8%B5%B0%E5%BB%8A%E7%9A%84%E8%BD%AF%E7%A1%AC%E7%BA%A6%E6%9D%9F%E6%B7%B7%E5%90%88%E4%BC%98%E5%8C%96%E9%81%BF%E9%9A%9C%E6%96%B9%E6%B3%95</guid>
@@ -58,12 +64,6 @@
     <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/%E8%BF%90%E5%8A%A8-%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B/%E5%9B%9B%E8%88%B5%E8%BD%AE%E5%BA%95%E7%9B%98%E8%BF%90%E5%8A%A8%E6%A8%A1%E5%9E%8B</link>
     <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/%E8%BF%90%E5%8A%A8-%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B/%E5%9B%9B%E8%88%B5%E8%BD%AE%E5%BA%95%E7%9B%98%E8%BF%90%E5%8A%A8%E6%A8%A1%E5%9E%8B</guid>
     <description><![CDATA[  参考: paper 构型说明 四个带机械限位的独立舵轮, 主要有平移， 自转， 边走边转等模式。 主要参数 车体坐标下左前轮距离X轴距离: b 车体坐标系下左前轮距离Y轴距离: a 左前轮车体坐标(x_1, y_1) = (b, a) 右前轮车体坐标(x_2, y_2) = (-b, a) 左后轮车体坐标(x_3, y_3) = (b, -a) 右后轮车体坐标(x_4, y_4) = (-b, -a) 车体坐标系下左前轮距离原点距离: k = \sqrt{b^2 + a^2} 轮子(左前， 右前， 左后， 右后)车体坐标系下的航向角: \delta_1, \delta_2, \delta_3... ]]></description>
-    <pubDate>Mon, 06 Apr 2026 01:57:51 GMT</pubDate>
-  </item><item>
-    <title>多车辆运动学公式推导</title>
-    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/%E8%BF%90%E5%8A%A8-%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B/%E5%A4%9A%E8%BD%A6%E8%BE%86%E8%BF%90%E5%8A%A8%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC</link>
-    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/%E8%BF%90%E5%8A%A8-%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B/%E5%A4%9A%E8%BD%A6%E8%BE%86%E8%BF%90%E5%8A%A8%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC</guid>
-    <description><![CDATA[ 问题定义 这里定义的“多车俩个运动学”，并非是多个彼此物理上分离的车辆的运动学（事实上如果多车是物理上彼此分离的，那么也没有定义一个联合运动公式的必要了）。而是一个车头或多个车头带多个托挂组成的类似连杆机构的系统（与火车类似，但是我们的车辆是定义的二维空间中，而非一维空间中）。其形式如图一所示。 问题分解 单车运动学 首先来定义单车运动学，我们假定我们研究的车头像一辆汽车一样，拥有前后两组对轮，可以简化为自行车模型如图1。 图中车辆被简化为自行车模型，前后两轮由连杆进行连接。假定轮胎不存在打滑也没有侧滑的情形。图中以右手坐标系为例（因为自动驾驶算法所依赖的ROS通常采用右手坐标系）。OXY为当... ]]></description>
     <pubDate>Mon, 06 Apr 2026 01:57:51 GMT</pubDate>
   </item>
     </channel>
