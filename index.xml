@@ -10,13 +10,25 @@
     <link>https://haloworld-c.github.io/content/01_Useful_Tools</link>
     <guid>https://haloworld-c.github.io/content/01_Useful_Tools</guid>
     <description><![CDATA[ Overview 在学习和工作过程中使用的一些比较好用的工具， 在这里进行汇总。 Content Linux 主流的开发环境， 有着众多的衍生版本(但都遵循unix的设计原则)。这里列出来的一些工具大多都不局限在linux系统， 但是作者主要在Linux下介绍其使用。 Linux Ubuntu安装总结 ROS ROS是机器系统库， 常用于机器人及自动驾驶领域。其核心是提供了一个机器人构建系统， 包含了节点管理， 编译， 及节点通讯的模型。目前主流使用的ROS2， 其主要改进为节点管理去中心化， 增强实时性能力。 ROS, ROS基础 ROS2 地图相关 lanelet2, 自动驾驶中使用的一种... ]]></description>
-    <pubDate>Sun, 26 Jul 2026 08:54:00 GMT</pubDate>
+    <pubDate>Sun, 26 Jul 2026 11:29:38 GMT</pubDate>
   </item><item>
     <title>02_Robot_Systems</title>
     <link>https://haloworld-c.github.io/content/02_Robot_Systems</link>
     <guid>https://haloworld-c.github.io/content/02_Robot_Systems</guid>
     <description><![CDATA[ over view 本章主要介绍主流的机器人系统的运动动力学模型， 包括室内差速底盘， 室外ackerman底盘， 四舵轮底盘(4WIS)以及机械臂/双足/四足。 content 两轮差速驱动运动模型 多车辆运动学公式推导 四舵轮底盘运动模型 . ]]></description>
-    <pubDate>Sun, 26 Jul 2026 08:54:00 GMT</pubDate>
+    <pubDate>Sun, 26 Jul 2026 11:29:38 GMT</pubDate>
+  </item><item>
+    <title>熊思录</title>
+    <link>https://haloworld-c.github.io/</link>
+    <guid>https://haloworld-c.github.io/</guid>
+    <description><![CDATA[ 推荐文章 Quote “在混乱的物理世界中寻找数学的优雅与系统的确定性。” 你好，我是 熊也(Hal)。一名致力于打通 AI(黑盒) 与决策规划控制(白盒)的机器人工程师。本博客的深层目标: 为我接触到的知识提供/构建一个统一的架构， 并试图提供一个统一视角, 以提升理解与认知 记录工程落地到算法理论的进阶之路。 Roadmap 目前以机器人为载体， 研究物理智能的原理与落地。如下图所示， 左侧为我的学习输入， 右侧为应用输出。 我认为目前机器人技术相关的感知与预测已经做的很好了， 不同构型的机器人的控制技术也日益成熟。而这中间始终都缺少决策智能。目前又大模型和VLA等技术作为决策智能的支撑，... ]]></description>
+    <pubDate>Sun, 26 Jul 2026 11:29:38 GMT</pubDate>
+  </item><item>
+    <title>两轮差速驱动运动模型</title>
+    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/%E8%BF%90%E5%8A%A8-%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B/%E4%B8%A4%E8%BD%AE%E5%B7%AE%E9%80%9F%E9%A9%B1%E5%8A%A8%E8%BF%90%E5%8A%A8%E6%A8%A1%E5%9E%8B</link>
+    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6/%E8%BF%90%E5%8A%A8-%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E5%9E%8B/%E4%B8%A4%E8%BD%AE%E5%B7%AE%E9%80%9F%E9%A9%B1%E5%8A%A8%E8%BF%90%E5%8A%A8%E6%A8%A1%E5%9E%8B</guid>
+    <description><![CDATA[  key word: differential drive motion， error model, DWR reference 小鱼ROS：机器人模型 [Probalilistic Robotics:5.3.3] 运动形式 轮式机器人一种常见的构型如下，由两个独立驱动的轮子驱动(有一个或多个随动轮来支撑)，如下图所示: 机器人可能在做直线运动或圆弧运动： 当v_1=v_2时: 机器人作直线运动，此时o_{motion}位于无穷远处，v=v_1=v_2 当v_1!=v_2时： 当v_1与v_2为同方向时， 机器人绕远处圆心v_{motion}，做圆周运动 机器人作圆弧运动，此时有 \omega... ]]></description>
+    <pubDate>Sun, 26 Jul 2026 11:29:38 GMT</pubDate>
   </item><item>
     <title>03_PNC_Systems</title>
     <link>https://haloworld-c.github.io/content/03_PNC_Systems</link>
@@ -52,18 +64,6 @@
     <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/%E6%A8%AA%E5%90%91%E6%8E%A7%E5%88%B6(%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA)</link>
     <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Controllers/%E6%A8%AA%E5%90%91%E6%8E%A7%E5%88%B6(%E8%B7%AF%E5%BE%84%E8%B7%9F%E8%B8%AA)</guid>
     <description><![CDATA[ 通用经验 指令前馈 根据曲率限速 路径的质量要过关 机械标零与电子标零 pure pursuit controller 关键在于选择一个合适的look_ahead_point 通过速度进行调节 L_t=k*v_t 形式二 L_t=v_t*l_t l_t含义需要进一步调研[ref](Ohta H, Akai N, Takeuchi E, Kato S, Edahiro M. ]]></description>
-    <pubDate>Sun, 26 Jul 2026 08:54:00 GMT</pubDate>
-  </item><item>
-    <title>Piecewise jerk Planner</title>
-    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/2D_local/Piecewise-jerk-Planner</link>
-    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/2D_local/Piecewise-jerk-Planner</guid>
-    <description><![CDATA[ Introduction 在底盘类局部路径规划中， 基于优化方法的横纵向解耦规划时比较主流的方法， 尤其是涉及到高速场景。在局部规划中主要考虑如下需求: 灵活的避障能力 为下游规划丝滑的运动轨迹 [原始论文](Optimal Vehicle Path Planning Using Quadratic Optimization for Baidu Apollo Open Platform) 基本思路与MiniSnap轨迹生成算法一样， 只是只考虑到jerk这一层(即S曲线), 不要被它的名字唬住。 Core Concept 分为SL横向+ST纵向分层解耦的方式， 求解两次QP问题， 并进行迭代 ... ]]></description>
-    <pubDate>Sun, 26 Jul 2026 08:54:00 GMT</pubDate>
-  </item><item>
-    <title>FemPosDeviationSmoother</title>
-    <link>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/smoother/FemPosDeviationSmoother</link>
-    <guid>https://haloworld-c.github.io/%E5%BA%94%E7%94%A8%E9%A2%86%E5%9F%9F/%E5%BA%94%E7%94%A8%E7%AE%97%E6%B3%95/Planning/Planners/smoother/FemPosDeviationSmoother</guid>
-    <description><![CDATA[ [原始论文](Optimal Vehicle Path Planning Using Quadratic Optimization for Baidu Apollo Open Platform)， 该论文只用一段话描述了核心思想， 其实现细节需要从官方代码仓库中理解。 代码参考1 代码参考2 Core Concept Fem含义为Finite Element Method，有限元方法 平滑项采用了有限元风格的离散弯曲能量， 把路径看成一个离散的”弹性线”， 然后最小化它的弯曲变形。、 是在笛卡尔空间中进行平滑优化, 可以施加最大曲率优化(由于其几何性质， 无法施加初始曲率限制), 也可以添加每... ]]></description>
     <pubDate>Sun, 26 Jul 2026 08:54:00 GMT</pubDate>
   </item>
     </channel>
