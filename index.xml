@@ -6,6 +6,12 @@
       <description>Last 10 notes on Halo2world</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>熊思录</title>
+    <link>https://haloworld-c.github.io/</link>
+    <guid>https://haloworld-c.github.io/</guid>
+    <description><![CDATA[ 推荐文章 Quote “在混乱的物理世界中寻找数学的优雅与系统的确定性。” 你好，我是 熊也(Hal)。一名致力于打通 AI(黑盒) 与决策规划控制(白盒)的机器人工程师。本博客的深层目标: 为我接触到的知识提供/构建一个统一的架构， 并试图提供一个统一视角, 以提升理解与认知 记录工程落地到算法理论的进阶之路。 Roadmap 目前以机器人为载体， 研究物理智能的原理与落地。如下图所示， 左侧为我的学习输入， 右侧为应用输出。 我认为目前机器人技术相关的感知与预测已经做的很好了， 不同构型的机器人的控制技术也日益成熟。而这中间始终都缺少决策智能。目前又大模型和VLA等技术作为决策智能的支撑，... ]]></description>
+    <pubDate>Sun, 26 Jul 2026 10:56:46 GMT</pubDate>
+  </item><item>
     <title>01_Useful_Tools</title>
     <link>https://haloworld-c.github.io/content/01_Useful_Tools</link>
     <guid>https://haloworld-c.github.io/content/01_Useful_Tools</guid>
@@ -22,12 +28,6 @@
     <link>https://haloworld-c.github.io/content/03_PNC_Systems</link>
     <guid>https://haloworld-c.github.io/content/03_PNC_Systems</guid>
     <description><![CDATA[ overview 本专题主要集中讨论机器人系统中的决策、规划控制领域(甚至包括定位， 因为我们可以用统一的观测器模型来将定位也纳入到本体控制系统)。目前主要内容有控制器， 后序将逐渐扩展， 也将在这里尝试将PNC系统用统一的框架来描述。 规划方法 平滑方法 FemPosDeviationSmoother 局部规划方法 Piecewise jerk Planner 一种基于局部安全走廊的软硬约束混合优化避障方法 控制方法 横向控制(路径跟踪) LQR控制器 iLQR算法 MPC控制思想 MPC控制算法原理与推导 . ]]></description>
-    <pubDate>Sun, 26 Jul 2026 10:14:39 GMT</pubDate>
-  </item><item>
-    <title>熊思录</title>
-    <link>https://haloworld-c.github.io/</link>
-    <guid>https://haloworld-c.github.io/</guid>
-    <description><![CDATA[ 推荐文章 Quote “在混乱的物理世界中寻找数学的优雅与系统的确定性。” 你好，我是 熊也(Hal)。一名致力于打通 AI(黑盒) 与决策规划控制(白盒)的机器人工程师。本博客的深层目标: 为我接触到的知识提供/构建一个统一的架构， 并试图提供一个统一视角, 以提升理解与认知 记录工程落地到算法理论的进阶之路。 知识导航 01_Useful_Tools: 主要是计算机相关的一些有用的效率工具及构建工具的使用经验分享 02_Mathematics and Physics: 微分方程 / 矩阵论 / 概率论 / 算法 /凸优化 / 李群 / 不确定性 / 刚体运动 02_Robot_System... ]]></description>
     <pubDate>Sun, 26 Jul 2026 10:14:39 GMT</pubDate>
   </item><item>
     <title>从不同的角度理解凸优化中的cost</title>
